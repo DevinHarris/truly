@@ -18,5 +18,5 @@ export default function Layout({ title, children }) {
 }
 
 Layout.defaultProps = {
-    title: 'Truly - Shorten URL Free, Fast, and Privately.'
+    title: 'Truly - Shorten URLs Free, Fast, and Privately.'
 }
