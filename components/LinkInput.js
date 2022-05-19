@@ -11,6 +11,8 @@ export default function LinkInput() {
 
     const [urlData, setUrlData] = useState(null);
     const [pageTitle, setPageTitle] = useState({});
+    const [copiedLink, setCopiedLink] = useState('');
+
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
@@ -34,7 +36,8 @@ export default function LinkInput() {
     }
 
     const handleLinkCopy = () => {
-        navigator.clipboard.writeText(`https://t-ruly.herokuapp.com/${urlData.shortId}`);
+        setCopiedLink(`https://t-ruly.herokuapp.com/${urlData.shortId}`)
+        navigator.clipboard.writeText(copiedLink);
 
     }
 
@@ -53,7 +56,7 @@ export default function LinkInput() {
                 {
                     urlData ? <div className={linkStyles.linkData}>
                         <a href={`https://t-ruly.herokuapp.com/${urlData.shortId}`} target="_blank" rel="noreferrer">Here's your new link!</a>
-                        <button className={linkStyles.copyBtn} onClick={handleLinkCopy}>Copy Link</button>
+                        <button className={linkStyles.copyBtn} onClick={handleLinkCopy}>{ !copiedLink ? 'Copy link' : 'Copied!' }</button>
                     </div> : null
                 }
             </div>
