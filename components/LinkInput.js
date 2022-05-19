@@ -52,7 +52,7 @@ export default function LinkInput() {
 
                 {
                     urlData ? <div className={linkStyles.linkData}>
-                        <a href={`https://t-ruly.herokuapp.com/${urlData.shortId}`} target="_blank">Here's your new link!</a>
+                        <a href={`https://t-ruly.herokuapp.com/${urlData.shortId}`} target="_blank" rel="noreferrer">Here's your new link!</a>
                         <button className={linkStyles.copyBtn} onClick={handleLinkCopy}>Copy Link</button>
                     </div> : null
                 }
