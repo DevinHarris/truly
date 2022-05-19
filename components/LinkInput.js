@@ -13,7 +13,7 @@ export default function LinkInput() {
     const [pageTitle, setPageTitle] = useState({});
     const [copiedLink, setCopiedLink] = useState('');
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
         let dataToSend = {
@@ -24,7 +24,9 @@ export default function LinkInput() {
             console.log(res.data);
         }).catch(err => {
             console.log(err);
-        }) 
+        })
+
+        reset();
     };
 
     const handleInput = (url) => {
