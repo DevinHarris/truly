@@ -7,6 +7,10 @@ export default function Layout({ title, children }) {
         <>
             <Head>
                 <title>{title}</title>
+                <meta charSet="utf-8" />
+                <link rel="icon" href="/image/favicon.png" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+
             </Head>
             <Nav />
             <div>
