@@ -1,0 +1,25 @@
+.linkMeta {
+    margin: 3em 0;
+}
+
+.linkMeta h2 {
+    font-size: 1.6rem;
+}
+
+.pageTitle {
+    font-weight: 400;
+}
+
+.linkData {
+    margin-top: 2em;
+}
+
+.linkData a {
+    font-size: 1.5rem;
+}
+
+.copyBtn {
+    background: none;
+    border: none;
+    margin-left: 2rem;
+}

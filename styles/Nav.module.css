@@ -1,0 +1,38 @@
+.nav {
+    height: 5em;
+    padding: 3em 5em;
+    width: 100%;
+}
+
+.logo {
+    background-image: linear-gradient(to left, #dd30eb, #ff4e73);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.navList {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navItem {
+    margin-right: 5em;
+}
+
+.navItem a {
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}

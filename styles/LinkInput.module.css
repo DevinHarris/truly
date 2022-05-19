@@ -1,0 +1,27 @@
+.inputContainer {
+    position: relative;
+    margin-top: 3em;
+}
+
+.input {
+    border: none;
+    border-radius: 3em;
+    box-shadow: 0 3.5px 3.5px hsla(0, 0%, 0%, .2);
+    height: 4.5em;
+    padding-left: 5em;
+    margin-bottom: 2em;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.input:active, .input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+}
+
+.linkIcon {
+    position: absolute;
+    top: 24px;
+    left: 30px;
+}
