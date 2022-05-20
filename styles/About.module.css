@@ -1,0 +1,17 @@
+.aboutPage {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.aboutHeader h1 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+.aboutPage p {
+    font-size: 1.5rem;
+}

@@ -7,7 +7,7 @@ export default function Nav() {
 
            
             <h1 className={styles.logo}>
-                <Link className={styles.navLink} href="#">Tr_uly</Link>
+                <Link className={styles.navLink} href="/">Tr_uly</Link>
             </h1>
             <ul className={styles.navList}>
                 <li className={styles.navItem}><Link className={styles.navLink} href="/about">About</Link></li>

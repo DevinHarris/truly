@@ -36,3 +36,17 @@
     font-size: 1.5rem;
     text-decoration: none;
 }
+
+@media all and (max-width: 900px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 8em;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+    }
+}

@@ -22,3 +22,17 @@
     color: #9f9f9f;
     font-size: 1.6rem;
 }
+
+@media all and (max-width: 900px) {
+    .home {
+        padding: 0 1em;
+    }
+
+    .homeSide {
+        width: 95%;
+    }
+
+    .tagline {
+        font-size: 4rem;
+    }
+}
